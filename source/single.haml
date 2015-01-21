@@ -1,0 +1,47 @@
+---
+title: home
+---
+.article_blog#note1
+    .data_blog
+        %span cat : 
+        %a{:href => 'http://ruby-lang.org'}> Diary , Personal
+        %span.heart.icons 
+            %a{:href => 'http://ruby-lang.org'}>136 Likes
+        %span.comment.icons 
+            %a{:href => 'http://ruby-lang.org'}>21 Comments
+    %h1 Lorem Ipsum Dolor Sit Amet
+    %p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti. 
+    %p Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci 
+    %img{:src=>'assets/images/postImg.jpg',:alt=>'Alt text'}
+    %p
+        %h3 TAGs
+        %a{:href => 'http://ruby-lang.org'}>holiday 
+        ,
+        %a{:href => 'http://ruby-lang.org'}>diary 
+        ,
+        %a{:href => 'http://ruby-lang.org'}>bestmomments
+.blog_comments
+    .next_stories
+        %h2 21 Comments
+        %button.button.blog_button Next  Stories >
+    .post_comments
+        %h2 Post A Comment
+        %form
+            %input{ :type => "text", :name => "Name", :placeholder =>"Name" }
+            %input{ :type => "text", :name => "Email", :placeholder =>"Email" }
+            %textarea{:type => "text", :name => "message", :placeholder =>"Comments" }
+            %button.button.center POST
+    .article_blog.article_commemt#com1
+        %h2 John Doe
+        %p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec 
+        %a{:href => 'http://ruby-lang.org', :class => "more"}>Reply
+    .article_blog.article_commemt#com2
+        %h2 John Doe
+        %p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec 
+        %a{:href => 'http://ruby-lang.org', :class => "more"}>Reply
+%button.button Show More Comments
+.rights.center 
+    Copyrights (c) &nbsp  
+    %a{:href => 'http://ruby-lang.org'}> Fikristudio
+    &nbsp 2014
+   

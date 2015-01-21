@@ -1,0 +1,73 @@
+@font-face {
+   font-family: RockWell;
+   src: local("RockWell"),
+        url(../font/rockwell.eot);
+}
+ 
+@font-face {
+  font-family: RockWell;
+  src: local("RockWell"),
+       url(../font/rockwell.ttf);
+}
+
+$fontMain: Arial, sans-serif;
+$fontAlt: 'RockWell';
+
+$Maincolor: #8e8e8e;
+$Addcolor:#ebebeb;
+$Titlecolor: #272727;
+$Akcidentcolor: #3eb3a5;
+
+// grid
+$columns: 14;
+$column: 60px;
+$gutter: 25px;
+@mixin columns($num) {
+  width: $column * $num + $gutter * $num;
+}
+
+// responsive
+$break-1: 478px;
+$break-2: 768px;
+$break-3: 900px;
+@mixin respond-to($media) {
+  @if $media == sm {
+    @media only screen and (max-width: $break-1) { @content; }
+  }
+  @if $media == mob {
+    @media only screen and (max-width: $break-2) { @content; }
+  }
+  @if $media == tablet {
+    @media only screen and (max-width: $break-3) { @content; }
+  }
+  @elseif $media == desktop {
+    @media only screen and (min-width: $break-3 + 1) { @content; }
+  }
+}
+
+@mixin retina() {
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+      /* Retina-specific stuff here */
+  }
+}
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+.clear {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
